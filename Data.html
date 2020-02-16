@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB CHALLENGE</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    
+    <div class="jumbotron text-center">
+      <h1>Weather Dashboard</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.. </p> 
+      <!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h2>Data</h2>
+    
+<div class="container">
+  
+  <a href="index.html" class="btn btn-info" role="button">Home</a>
+  <a href="Comparison.html" class="btn btn-info" role="button">Comparison</a>
+  <a href="Data.html" class="btn btn-info" role="button">Data</a>
+  <div class="btn-group">
+    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    Plot
+    </button>
+    <div class="dropdown-menu">
+      <a href="Temperature.html" class="dropdown-item" >Temperature</a>
+      <a href="Humidity.html" class="dropdown-item" >Humidity</a>
+      <a href="Cloudiness.html" class="dropdown-item" >Cloudiness</a>
+      <a href="Wind.html" class="dropdown-item">Wind Speed</a>
+    </div>
+</div>
+</div>
+
+</body>
+
+
+  
+
+</html>
+
+    </div>
+
+    <div>
+      <body>
+        <h2>Filterable Table</h2>
+        <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+        <input id="myInput" type="text" placeholder="Search..">
+        <br><br>
+        
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+        <script>
+          
+            function arrayToTable(tableData) {
+                var table = $('<table></table>');
+                $(tableData).each(function (i, rowData) {
+                    var row = $('<tr></tr>');
+                    $(rowData).each(function (j, cellData) {
+                        row.append($('<td>'+cellData+'</td>'));
+                    });
+                    table.append(row);
+                });
+                return table;
+            }
+        
+            $.ajax({
+                type: "GET",
+                url: ".//Resources/cities.csv",
+                success: function (data) {
+                    $('body').append(arrayToTable(Papa.parse(data).data));
+                }
+            });
+        </script>
+        </script>
+        <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        
+        </style>
+        </body>
+        </div>
+        
